@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd());
   const isDev = mode !== "production";
   return {
-    base: "/json-to-any-web/",
+    base: "/",
     define: {
       __SERVER_NAME__: `'${env.VITE_SERVER_NAME}'`,
       __DEV__: isDev,
